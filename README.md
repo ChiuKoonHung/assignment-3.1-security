@@ -11,14 +11,21 @@ You are to implement a simple function in `index.js`:
 function sum (a, b){
     // log info
     if(typeof a !== "number" || typeof b !== "number"){
-        const err = new Error("Arguments must be numeric");
-        // log error
-        throw err;
+        throw new Error("Arguments must be numeric");
     }
+
     const total = a + b;
     // log debug
     return total;
 }
+
+try{
+    sum(1,2);
+    sum(1, "test");
+}catch(err){
+    // log error
+}
+
 ```
 
 You are to add logging code to the commented lines.
