@@ -25,13 +25,13 @@ You are to add logging code to the commented lines.
 
 ### Task 1: Setup Logger
 
-Setup logger at `./logging-app/src/logger.js` and export it using CommonJS approach.
+Setup logger at `./logging-app/src/logger.js` and export it using CommonJS approach `module.exports = logger;`.
 
 Refer to [winston usage](https://github.com/winstonjs/winston#usage) for instruction on how to setup a logger.
 
 ### Task 2: Apply logging to sum()
 
-You need to import `./src/logger.js` to `index.js`.
+You need to import `./src/logger.js` to `index.js`. E.g. `const logger = require("./src/logger")`
 
 Then, apply logging to commented line.
 
